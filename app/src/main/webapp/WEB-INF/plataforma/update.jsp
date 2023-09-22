@@ -3,19 +3,20 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Novo Gênero</title>
+        <title>Editar Fornecedor</title>
         <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
-            <h1>Novo Gênero</h1>
-            <form action="/genero/insert" method="post">
+            <h1>Editar Fornecedor</h1>
+            <form action="/plataforma/update" method="post">
+                <input type="hidden" name="id" value="${fornecedor.id}" />
                 <div class="form-group">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" class="form-control" />
+                    <input type="text" name="nome" class="form-control" value="${fornecedor.nome}" />
                 </div>
                 <br />
-                <a href="/genero/list" class="btn btn-primary" >Voltar</a>
+                <a href="/plataforma/list" class="btn btn-primary" >Voltar</a>
                 <button type="submit" class="btn btn-success">Salvar</button>
             </form>
         </div>

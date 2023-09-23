@@ -3,17 +3,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Editar Fornecedor</title>
+        <title>Editar Plataforma</title>
         <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
             <h1>Editar Fornecedor</h1>
             <form action="/plataforma/update" method="post">
-                <input type="hidden" name="id" value="${fornecedor.id}" />
+                <input type="hidden" name="id" value="${plataforma.id}" />
                 <div class="form-group">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" class="form-control" value="${fornecedor.nome}" />
+                    <input type="text" name="nome" class="form-control" value="${plataforma.nome}" />
                 </div>
                 <br />
                 <a href="/plataforma/list" class="btn btn-primary" >Voltar</a>
